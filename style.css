@@ -1,0 +1,161 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 10px;
+  background: linear-gradient(135deg, #FF9A8B, #f14769, #FF99AC); /* Warm pink gradient */
+}
+
+::selection {
+  color: #fff;
+  background: #FF6A88; /* Bright pink for selection */
+}
+
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #FFFFFF, #F5F7FA); /* Subtle light gradient */
+  box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space for footer */
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: #3C40C6; /* Royal blue for a bold header */
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #3C40C6; /* Royal blue for labels */
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  border: 2px solid #FFA502; /* Bright orange border */
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 2px solid #FF6F61; /* Vibrant coral for focus */
+}
+
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  width: 115px;
+  height: 45px;
+  align-items: center;
+  border-radius: 5px;
+  justify-content: center;
+  border: 2px solid #575FCF; /* Deep purple border */
+}
+
+.select-box img {
+  max-width: 21px;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  background: none;
+  margin: 0 -5px 0 5px;
+  color: #3C40C6; /* Royal blue for select text */
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #FFFFFF; /* White scrollbar track */
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #34E7E4; /* Aqua scrollbar thumb */
+  border-radius: 8px;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 22px;
+  color: #FFA502; /* Bright orange for icons */
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+  color: #575FCF; /* Deep purple for contrast */
+}
+
+form button {
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #06a2a0, #037e44); /* Aqua to green gradient */
+  transition: 0.3s ease;
+  border: none;
+}
+
+form button:hover {
+  background: linear-gradient(135deg, #037942, #03807d); /* Reverse the gradient */
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
+  background-color: #fff; /* Matches the wrapper background */
+  color: #675AFE; /* Accent color */
+  border-top: 1px solid #ddd; /* Subtle separation from the content */
+  width: 100%; /* Ensure footer spans the full width */
+}
+
+footer a {
+  color: #4534fe; /* Slightly darker for link contrast */
+  text-decoration: none;
+  font-weight: 500; /* Slightly bold for emphasis */
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #000; /* Darker color for hover state */
+}
