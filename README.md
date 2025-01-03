@@ -1,7 +1,8 @@
 # Currency-Convertor
 
 This Currency Converter project allows users to convert one currency to another in real time. The application provides an intuitive and responsive interface, enabling seamless currency exchange calculations based on up-to-date exchange rates.
-
+## Live Demo: 
+https://shimmering-bavarois-a7d4ca.netlify.app/
 ## Features
 Real-Time Currency Conversion: Convert between different currencies with live exchange rates.
 Wide Range of Currencies: Supports conversion between multiple global currencies.
